@@ -1,0 +1,393 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07ce4h ( 31972) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00017d0c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00017d30 vaddr=3ffb0000 size=021ech (  8684) load[0m
+[0;32mI (108) esp_image: segment 3: paddr=00019f24 vaddr=40080000 size=060f4h ( 24820) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=10e80h ( 69248) map[0m
+[0;32mI (146) esp_image: segment 5: paddr=00030ea8 vaddr=400860f4 size=067c8h ( 26568) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (182) app_init: Project name:     blink[0m
+[0;32mI (186) app_init: App version:      1[0m
+[0;32mI (189) app_init: Compile time:     Dec 30 2024 20:36:12[0m
+[0;32mI (194) app_init: ELF file SHA256:  c5d49b444...[0m
+[0;32mI (198) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (204) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 3FFB2A48 len 0002D5B8 (181 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (238) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (243) heap_init: At 4008C8BC len 00013744 (77 KiB): IRAM[0m
+[0;32mI (250) spi_flash: detected chip: generic[0m
+[0;32mI (252) spi_flash: flash io: dio[0m
+[0;33mW (255) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (268) main_task: Started on CPU0[0m
+[0;32mI (278) main_task: Calling app_main()[0m
+[0;32mI (278) debug: CONSTRUCTOR[0m
+[0;32mI (278) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (278) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (288) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (308) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (308) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (318) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (328) gpio: GPIO[34]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Hello, World
+[0;32mI (338) debug: LED ON[0m
+[0;32mI (668) debug: LED OFF[0m
+[0;32mI (668) debug: LED ON[0m
+[1;31mE (668) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (998) debug: LED OFF[0m
+[1;31mE (998) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (998) debug: LED ON[0m
+[0;32mI (1328) debug: LED OFF[0m
+[0;32mI (1328) debug: LED ON[0m
+[1;31mE (1328) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (1658) debug: LED OFF[0m
+[1;31mE (1658) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (1658) debug: LED ON[0m
+[0;32mI (1988) debug: LED OFF[0m
+[0;32mI (1988) debug: LED ON[0m
+[1;31mE (1988) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (2318) debug: LED OFF[0m
+[1;31mE (2318) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (2318) debug: LED ON[0m
+[0;32mI (2648) debug: LED OFF[0m
+[0;32mI (2648) debug: LED ON[0m
+[1;31mE (2648) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (2978) debug: LED OFF[0m
+[1;31mE (2978) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (2978) debug: LED ON[0m
+[0;32mI (3308) debug: LED OFF[0m
+[0;32mI (3308) debug: LED ON[0m
+[1;31mE (3308) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (3638) debug: LED OFF[0m
+[1;31mE (3638) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (3638) debug: LED ON[0m
+[0;32mI (3968) debug: LED OFF[0m
+[0;32mI (3968) debug: LED ON[0m
+[0;32mI (4298) debug: LED OFF[0m
+[0;32mI (4298) debug: LED ON[0m
+[0;32mI (4628) debug: LED OFF[0m
+[0;32mI (4628) debug: LED ON[0m
+[0;32mI (4958) debug: LED OFF[0m
+[0;32mI (4958) debug: LED ON[0m
+[0;32mI (5288) debug: LED OFF[0m
+[0;32mI (5288) debug: LED ON[0m
+[0;32mI (5618) debug: LED OFF[0m
+[0;32mI (5618) debug: LED ON[0m
+[0;32mI (5948) debug: LED OFF[0m
+[0;32mI (5948) debug: LED ON[0m
+[0;32mI (6278) debug: LED OFF[0m
+[0;32mI (6278) debug: LED ON[0m
+[0;32mI (6608) debug: LED OFF[0m
+[0;32mI (6608) debug: LED ON[0m
+[0;32mI (6938) debug: LED OFF[0m
+[0;32mI (6938) debug: LED ON[0m
+[0;32mI (7268) debug: LED OFF[0m
+[0;32mI (7268) debug: LED ON[0m
+[0;32mI (7598) debug: LED OFF[0m
+[0;32mI (7598) debug: LED ON[0m
+[0;32mI (7928) debug: LED OFF[0m
+[0;32mI (7928) debug: LED ON[0m
+[0;32mI (8258) debug: LED OFF[0m
+[0;32mI (8258) debug: LED ON[0m
+[0;32mI (8588) debug: LED OFF[0m
+[0;32mI (8588) debug: LED ON[0m
+[0;32mI (8918) debug: LED OFF[0m
+[0;32mI (8918) debug: LED ON[0m
+[0;32mI (9248) debug: LED OFF[0m
+[0;32mI (9248) debug: LED ON[0m
+[0;32mI (9578) debug: LED OFF[0m
+[0;32mI (9578) debug: LED ON[0m
+[0;32mI (9908) debug: LED OFF[0m
+[0;32mI (9908) debug: LED ON[0m
+[0;32mI (10238) debug: LED OFF[0m
+[0;32mI (10238) debug: LED ON[0m
+[0;32mI (10568) debug: LED OFF[0m
+[0;32mI (10568) debug: LED ON[0m
+[0;32mI (10898) debug: LED OFF[0m
+[0;32mI (10898) debug: LED ON[0m
+[0;32mI (11228) debug: LED OFF[0m
+[0;32mI (11228) debug: LED ON[0m
+[0;32mI (11558) debug: LED OFF[0m
+[0;32mI (11558) debug: LED ON[0m
+[0;32mI (11888) debug: LED OFF[0m
+[0;32mI (11888) debug: LED ON[0m
+[0;32mI (12218) debug: LED OFF[0m
+[0;32mI (12218) debug: LED ON[0m
+[0;32mI (12548) debug: LED OFF[0m
+[0;32mI (12548) debug: LED ON[0m
+[0;32mI (12878) debug: LED OFF[0m
+[0;32mI (12878) debug: LED ON[0m
+[0;32mI (13208) debug: LED OFF[0m
+[0;32mI (13208) debug: LED ON[0m
+[0;32mI (13538) debug: LED OFF[0m
+[0;32mI (13538) debug: LED ON[0m
+[0;32mI (13868) debug: LED OFF[0m
+[0;32mI (13868) debug: LED ON[0m
+[0;32mI (14198) debug: LED OFF[0m
+[0;32mI (14198) debug: LED ON[0m
+[0;32mI (14528) debug: LED OFF[0m
+[0;32mI (14528) debug: LED ON[0m
+[0;32mI (14858) debug: LED OFF[0m
+[0;32mI (14858) debug: LED ON[0m
+[0;32mI (15188) debug: LED OFF[0m
+[0;32mI (15188) debug: LED ON[0m
+[0;32mI (15518) debug: LED OFF[0m
+[0;32mI (15518) debug: LED ON[0m
+[0;32mI (15848) debug: LED OFF[0m
+[0;32mI (15848) debug: LED ON[0m
+[0;32mI (16178) debug: LED OFF[0m
+[0;32mI (16178) debug: LED ON[0m
+[0;32mI (16508) debug: LED OFF[0m
+[0;32mI (16508) debug: LED ON[0m
+[0;32mI (16838) debug: LED OFF[0m
+[0;32mI (16838) debug: LED ON[0m
+[0;32mI (17168) debug: LED OFF[0m
+[0;32mI (17168) debug: LED ON[0m
+[0;32mI (17498) debug: LED OFF[0m
+[0;32mI (17498) debug: LED ON[0m
+[0;32mI (17828) debug: LED OFF[0m
+[0;32mI (17828) debug: LED ON[0m
+[0;32mI (18158) debug: LED OFF[0m
+[0;32mI (18158) debug: LED ON[0m
+[0;32mI (18488) debug: LED OFF[0m
+[0;32mI (18488) debug: LED ON[0m
+[0;32mI (18818) debug: LED OFF[0m
+[0;32mI (18818) debug: LED ON[0m
+[0;32mI (19148) debug: LED OFF[0m
+[0;32mI (19148) debug: LED ON[0m
+[0;32mI (19478) debug: LED OFF[0m
+[0;32mI (19478) debug: LED ON[0m
+[0;32mI (19808) debug: LED OFF[0m
+[0;32mI (19808) debug: LED ON[0m
+[0;32mI (20138) debug: LED OFF[0m
+[0;32mI (20138) debug: LED ON[0m
+[0;32mI (20468) debug: LED OFF[0m
+[0;32mI (20468) debug: LED ON[0m
+[0;32mI (20798) debug: LED OFF[0m
+[0;32mI (20798) debug: LED ON[0m
+[0;32mI (21128) debug: LED OFF[0m
+[0;32mI (21128) debug: LED ON[0m
+[0;32mI (21458) debug: LED OFF[0m
+[0;32mI (21458) debug: LED ON[0m
+[0;32mI (21788) debug: LED OFF[0m
+[0;32mI (21788) debug: LED ON[0m
+[0;32mI (22118) debug: LED OFF[0m
+[0;32mI (22118) debug: LED ON[0m
+[0;32mI (22448) debug: LED OFF[0m
+[0;32mI (22448) debug: LED ON[0m
+[0;32mI (22778) debug: LED OFF[0m
+[0;32mI (22778) debug: LED ON[0m
+[0;32mI (23108) debug: LED OFF[0m
+[0;32mI (23108) debug: LED ON[0m
+[0;32mI (23438) debug: LED OFF[0m
+[0;32mI (23438) debug: LED ON[0m
+[0;32mI (23768) debug: LED OFF[0m
+[0;32mI (23768) debug: LED ON[0m
+[0;32mI (24098) debug: LED OFF[0m
+[0;32mI (24098) debug: LED ON[0m
+[0;32mI (24428) debug: LED OFF[0m
+[0;32mI (24428) debug: LED ON[0m
+[0;32mI (24758) debug: LED OFF[0m
+[0;32mI (24758) debug: LED ON[0m
+[1;31mE (24758) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (25088) debug: LED OFF[0m
+[1;31mE (25088) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (25088) debug: LED ON[0m
+[0;32mI (25418) debug: LED OFF[0m
+[0;32mI (25418) debug: LED ON[0m
+[1;31mE (25418) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (25748) debug: LED OFF[0m
+[1;31mE (25748) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (25748) debug: LED ON[0m
+[0;32mI (26078) debug: LED OFF[0m
+[0;32mI (26078) debug: LED ON[0m
+[1;31mE (26078) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (26408) debug: LED OFF[0m
+[1;31mE (26408) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (26408) debug: LED ON[0m
+[0;32mI (26738) debug: LED OFF[0m
+[0;32mI (26738) debug: LED ON[0m
+[1;31mE (26738) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (27068) debug: LED OFF[0m
+[1;31mE (27068) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (27068) debug: LED ON[0m
+[0;32mI (27398) debug: LED OFF[0m
+[0;32mI (27398) debug: LED ON[0m
+[0;32mI (27728) debug: LED OFF[0m
+[0;32mI (27728) debug: LED ON[0m
+[0;32mI (28058) debug: LED OFF[0m
+[0;32mI (28058) debug: LED ON[0m
+[0;32mI (28388) debug: LED OFF[0m
+[0;32mI (28388) debug: LED ON[0m
+[0;32mI (28718) debug: LED OFF[0m
+[0;32mI (28718) debug: LED ON[0m
+[0;32mI (29048) debug: LED OFF[0m
+[0;32mI (29048) debug: LED ON[0m
+[0;32mI (29378) debug: LED OFF[0m
+[0;32mI (29378) debug: LED ON[0m
+[0;32mI (29708) debug: LED OFF[0m
+[0;32mI (29708) debug: LED ON[0m
+[0;32mI (30038) debug: LED OFF[0m
+[0;32mI (30038) debug: LED ON[0m
+[0;32mI (30368) debug: LED OFF[0m
+[0;32mI (30368) debug: LED ON[0m
+[0;32mI (30698) debug: LED OFF[0m
+[0;32mI (30698) debug: LED ON[0m
+[0;32mI (31028) debug: LED OFF[0m
+[0;32mI (31028) debug: LED ON[0m
+[0;32mI (31358) debug: LED OFF[0m
+[0;32mI (31358) debug: LED ON[0m
+[0;32mI (31688) debug: LED OFF[0m
+[0;32mI (31688) debug: LED ON[0m
+[0;32mI (32018) debug: LED OFF[0m
+[0;32mI (32018) debug: LED ON[0m
+[0;32mI (32348) debug: LED OFF[0m
+[0;32mI (32348) debug: LED ON[0m
+[0;32mI (32678) debug: LED OFF[0m
+[0;32mI (32678) debug: LED ON[0m
+[0;32mI (33008) debug: LED OFF[0m
+[0;32mI (33008) debug: LED ON[0m
+[0;32mI (33338) debug: LED OFF[0m
+[0;32mI (33338) debug: LED ON[0m
+[0;32mI (33668) debug: LED OFF[0m
+[0;32mI (33668) debug: LED ON[0m
+[1;31mE (33668) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (33998) debug: LED OFF[0m
+[1;31mE (33998) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (33998) debug: LED ON[0m
+[0;32mI (34328) debug: LED OFF[0m
+[0;32mI (34328) debug: LED ON[0m
+[0;32mI (34658) debug: LED OFF[0m
+[0;32mI (34658) debug: LED ON[0m
+[0;32mI (34988) debug: LED OFF[0m
+[0;32mI (34988) debug: LED ON[0m
+[0;32mI (35318) debug: LED OFF[0m
+[0;32mI (35318) debug: LED ON[0m
+[0;32mI (35648) debug: LED OFF[0m
+[0;32mI (35648) debug: LED ON[0m
+[1;31mE (35648) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (35978) debug: LED OFF[0m
+[1;31mE (35978) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (35978) debug: LED ON[0m
+[0;32mI (36308) debug: LED OFF[0m
+[0;32mI (36308) debug: LED ON[0m
+[0;32mI (36638) debug: LED OFF[0m
+[0;32mI (36638) debug: LED ON[0m
+[0;32mI (36968) debug: LED OFF[0m
+[0;32mI (36968) debug: LED ON[0m
+[1;31mE (36968) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (37298) debug: LED OFF[0m
+[1;31mE (37298) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (37298) debug: LED ON[0m
+[0;32mI (37628) debug: LED OFF[0m
+[0;32mI (37628) debug: LED ON[0m
+[1;31mE (37628) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (37958) debug: LED OFF[0m
+[1;31mE (37958) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (37958) debug: LED ON[0m
+[0;32mI (38288) debug: LED OFF[0m
+[0;32mI (38288) debug: LED ON[0m
+[1;31mE (38288) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (38618) debug: LED OFF[0m
+[1;31mE (38618) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (38618) debug: LED ON[0m
+[0;32mI (38948) debug: LED OFF[0m
+[0;32mI (38948) debug: LED ON[0m
+[0;32mI (39278) debug: LED OFF[0m
+[0;32mI (39278) debug: LED ON[0m
+[0;32mI (39608) debug: LED OFF[0m
+[0;32mI (39608) debug: LED ON[0m
+[0;32mI (39938) debug: LED OFF[0m
+[0;32mI (39938) debug: LED ON[0m
+[0;32mI (40268) debug: LED OFF[0m
+[0;32mI (40268) debug: LED ON[0m
+[1;31mE (40268) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (40598) debug: LED OFF[0m
+[1;31mE (40598) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (40598) debug: LED ON[0m
+[0;32mI (40928) debug: LED OFF[0m
+[0;32mI (40928) debug: LED ON[0m
+[1;31mE (40928) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (41258) debug: LED OFF[0m
+[1;31mE (41258) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (41258) debug: LED ON[0m
+[0;32mI (41588) debug: LED OFF[0m
+[0;32mI (41588) debug: LED ON[0m
+[1;31mE (41588) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (41918) debug: LED OFF[0m
+[1;31mE (41918) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (41918) debug: LED ON[0m
+[0;32mI (42248) debug: LED OFF[0m
+[0;32mI (42248) debug: LED ON[0m
+[1;31mE (42248) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (42578) debug: LED OFF[0m
+[1;31mE (42578) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (42578) debug: LED ON[0m
+[0;32mI (42908) debug: LED OFF[0m
+[0;32mI (42908) debug: LED ON[0m
+[1;31mE (42908) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (43238) debug: LED OFF[0m
+[1;31mE (43238) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (43238) debug: LED ON[0m
+[0;32mI (43568) debug: LED OFF[0m
+[0;32mI (43568) debug: LED ON[0m
+[1;31mE (43568) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (43898) debug: LED OFF[0m
+[1;31mE (43898) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (43898) debug: LED ON[0m
+[0;32mI (44228) debug: LED OFF[0m
+[0;32mI (44228) debug: LED ON[0m
+[1;31mE (44228) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (44558) debug: LED OFF[0m
+[1;31mE (44558) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (44558) debug: LED ON[0m
+[0;32mI (44888) debug: LED OFF[0m
+[0;32mI (44888) debug: LED ON[0m
+[0;32mI (45218) debug: LED OFF[0m
+[0;32mI (45218) debug: LED ON[0m
+[0;32mI (45548) debug: LED OFF[0m
+[0;32mI (45548) debug: LED ON[0m
+[0;32mI (45878) debug: LED OFF[0m
+[0;32mI (45878) debug: LED ON[0m
+[0;32mI (46208) debug: LED OFF[0m
+[0;32mI (46208) debug: LED ON[0m
+[0;32mI (46538) debug: LED OFF[0m
+[0;32mI (46538) debug: LED ON[0m
+[0;32mI (46868) debug: LED OFF[0m
+[0;32mI (46868) debug: LED ON[0m
+[0;32mI (47198) debug: LED OFF[0m
+[0;32mI (47198) debug: LED ON[0m

@@ -1,0 +1,2 @@
+source /Users/mux/Code/esp/simon-says/src/build/bootloader/gdbinit/symbols
+source /Users/mux/Code/esp/simon-says/src/build/bootloader/gdbinit/connect
