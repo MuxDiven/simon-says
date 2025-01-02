@@ -6,8 +6,14 @@
 #include "sdkconfig.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 static const char *TAG = "debug";
+
+int *index_vector;
+int sequence_length;
+uint8_t score;
 
 #define COMPONENT_PAIRS 4
 
@@ -20,7 +26,7 @@ static const char *TAG = "debug";
 #define BUTTON0 22
 #define BUTTON1 25
 #define BUTTON2 23
-#define BUTTON3 19
+#define BUTTON3 18
 
 gpio_config_t LED_conf = {
     .pin_bit_mask = (1ULL << LED0 | 1ULL << LED1 | 1ULL << LED2 | 1ULL << LED3),
@@ -56,8 +62,28 @@ static void blink_led(int index) {
   gpio_set_level(LED_VECTOR[index], false);
 }
 
+static void output_sequence() {
+  for (int i = 0; i < sequence_length; i++) {
+    blink_led(index_vector[i]);
+    vTaskDelay((CONFIG_BLINK_PERIOD >> 2) / portTICK_PERIOD_MS);
+    ESP_LOGI(TAG, "index:\t%d", index_vector[i]);
+  }
+}
+
 static void configure_io(void) {
   ESP_LOGI(TAG, "CONSTRUCTOR");
+  srand(time(NULL)); // randomise seed
+
+  score = 0;
+  index_vector = (int *)malloc(COMPONENT_PAIRS * sizeof(int));
+  sequence_length = COMPONENT_PAIRS;
+
+  if (!index_vector) {
+    ESP_LOGI(TAG, "memory alocation failed");
+    free(index_vector);
+    return;
+  }
+
   gpio_config(&LED_conf);
   gpio_config(&BUTTON_conf);
 
@@ -66,6 +92,7 @@ static void configure_io(void) {
     gpio_reset_pin(BUTTON_VECTOR[i]);
     gpio_set_direction(LED_VECTOR[i], GPIO_MODE_OUTPUT);
     gpio_set_direction(BUTTON_VECTOR[i], GPIO_MODE_INPUT);
+    index_vector[i] = rand() % COMPONENT_PAIRS;
   }
 }
 
@@ -90,8 +117,8 @@ static void input_listener() {
     LED_i = 2;
   } else if (gpio_get_level(BUTTON3) == 0) {
     LED_i = 3;
-    ESP_LOGI(TAG, "bot right button hit");
   }
+
   ESP_LOGI(TAG, "LED_i: %d", LED_i);
 
   if (LED_i > -1) {
@@ -106,10 +133,11 @@ static void input_listener() {
 void app_main(void) {
   /* Configure the peripheral according to the LED type */
   configure_io();
+  output_sequence();
+  free(index_vector);
 
   while (1) {
     input_listener();
-    vTaskDelay((CONFIG_BLINK_PERIOD >> 2) /
-               portTICK_PERIOD_MS); // roughly 1/3 seconds
+    vTaskDelay((CONFIG_BLINK_PERIOD >> 2) / portTICK_PERIOD_MS);
   }
 }

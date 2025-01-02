@@ -1,0 +1,344 @@
+830h ( 26672) load
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07d1ch ( 32028) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00017d44 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (101) esp_image: segment 2: paddr=00017d68 vaddr=3ffb0000 size=0221ch (  8732) load[0m
+[0;32mI (108) esp_image: segment 3: paddr=00019f8c vaddr=40080000 size=0608ch ( 24716) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=10e64h ( 69220) map[0m
+[0;32mI (146) esp_image: segment 5: paddr=00030e8c vaddr=4008608c size=06830h ( 26672) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (182) app_init: Project name:     blink[0m
+[0;32mI (186) app_init: App version:      1[0m
+[0;32mI (189) app_init: Compile time:     Dec 30 2024 20:36:12[0m
+[0;32mI (194) app_init: ELF file SHA256:  8086772ed...[0m
+[0;32mI (198) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (204) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 3FFB2A78 len 0002D588 (181 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (238) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (243) heap_init: At 4008C8BC len 00013744 (77 KiB): IRAM[0m
+[0;32mI (250) spi_flash: detected chip: generic[0m
+[0;32mI (252) spi_flash: flash io: dio[0m
+[0;33mW (255) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (268) main_task: Started on CPU0[0m
+[0;32mI (278) main_task: Calling app_main()[0m
+[0;32mI (278) debug: CONSTRUCTOR[0m
+[0;32mI (278) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (278) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (288) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (298) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (308) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (308) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (318) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (328) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (338) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (348) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (378) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (388) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (398) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (408) debug: LED_i: -1[0m
+[0;32mI (658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (658) debug: LED_i: -1[0m
+[0;32mI (908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (908) debug: LED_i: -1[0m
+[0;32mI (1158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (1158) debug: LED_i: -1[0m
+[0;32mI (1408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (1408) debug: LED_i: -1[0m
+[0;32mI (1658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (1658) debug: LED_i: -1[0m
+[0;32mI (1908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (1908) debug: LED_i: -1[0m
+[0;32mI (2158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (2158) debug: LED_i: -1[0m
+[0;32mI (2408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (2408) debug: LED_i: -1[0m
+[0;32mI (2658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (2658) debug: LED_i: -1[0m
+[0;32mI (2908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (2908) debug: LED_i: -1[0m
+[0;32mI (3158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (3158) debug: LED_i: -1[0m
+[0;32mI (3408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (3408) debug: LED_i: -1[0m
+[0;32mI (3658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (3658) debug: LED_i: -1[0m
+[0;32mI (3908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (3908) debug: LED_i: -1[0m
+[0;32mI (4158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (4158) debug: LED_i: -1[0m
+[0;32mI (4408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (4408) debug: LED_i: -1[0m
+[0;32mI (4658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (4658) debug: LED_i: -1[0m
+[0;32mI (4908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (4908) debug: LED_i: -1[0m
+[0;32mI (5158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (5158) debug: LED_i: -1[0m
+[0;32mI (5408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (5408) debug: LED_i: -1[0m
+[0;32mI (5658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (5658) debug: LED_i: -1[0m
+[0;32mI (5908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (5908) debug: LED_i: -1[0m
+[0;32mI (6158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (6158) debug: LED_i: -1[0m
+[0;32mI (6408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (6408) debug: LED_i: -1[0m
+[0;32mI (6658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (6658) debug: LED_i: -1[0m
+[0;32mI (6908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (6908) debug: LED_i: -1[0m
+[0;32mI (7158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (7158) debug: LED_i: -1[0m
+[0;32mI (7408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (7408) debug: LED_i: -1[0m
+[0;32mI (7658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (7658) debug: LED_i: -1[0m
+[0;32mI (7908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (7908) debug: LED_i: -1[0m
+[0;32mI (8158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (8158) debug: LED_i: -1[0m
+[0;32mI (8408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (8408) debug: LED_i: -1[0m
+[0;32mI (8658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (8658) debug: LED_i: -1[0m
+[0;32mI (8908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (8908) debug: LED_i: -1[0m
+[0;32mI (9158) debug: BUTTON0: 1, BUTTON1: 0, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (9158) debug: LED_i: 1[0m
+[0;32mI (9158) debug: [0m
+[0;32mI (9658) debug: LED OFF[0m
+[0;32mI (9908) debug: BUTTON0: 0, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (9908) debug: LED_i: 0[0m
+[0;32mI (9908) debug: [0m
+[0;32mI (10408) debug: LED OFF[0m
+[0;32mI (10658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 0, BUTTON3: 1[0m
+[0;32mI (10658) debug: LED_i: 2[0m
+[0;32mI (10658) debug: [0m
+[0;32mI (11158) debug: LED OFF[0m
+[0;32mI (11408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (11408) debug: LED_i: -1[0m
+[0;32mI (11658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (11658) debug: LED_i: -1[0m
+[0;32mI (11908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 0, BUTTON3: 1[0m
+[0;32mI (11908) debug: LED_i: 2[0m
+[0;32mI (11908) debug: [0m
+[0;32mI (12408) debug: LED OFF[0m
+[0;32mI (12658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (12658) debug: LED_i: -1[0m
+[0;32mI (12908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (12908) debug: LED_i: -1[0m
+[0;32mI (13158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (13158) debug: LED_i: -1[0m
+[0;32mI (13408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (13408) debug: LED_i: -1[0m
+[0;32mI (13658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (13658) debug: LED_i: -1[0m
+[0;32mI (13908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (13908) debug: LED_i: -1[0m
+[0;32mI (14158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (14158) debug: LED_i: -1[0m
+[0;32mI (14408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (14408) debug: LED_i: -1[0m
+[0;32mI (14658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (14658) debug: LED_i: -1[0m
+[0;32mI (14908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (14908) debug: LED_i: -1[0m
+[0;32mI (15158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (15158) debug: LED_i: -1[0m
+[0;32mI (15408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (15408) debug: LED_i: -1[0m
+[0;32mI (15658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (15658) debug: LED_i: -1[0m
+[0;32mI (15908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (15908) debug: LED_i: -1[0m
+[0;32mI (16158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (16158) debug: LED_i: -1[0m
+[0;32mI (16408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (16408) debug: LED_i: -1[0m
+[0;32mI (16658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (16658) debug: LED_i: -1[0m
+[0;32mI (16908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (16908) debug: LED_i: -1[0m
+[0;32mI (17158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (17158) debug: LED_i: -1[0m
+[0;32mI (17408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (17408) debug: LED_i: -1[0m
+[0;32mI (17658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (17658) debug: LED_i: -1[0m
+[0;32mI (17908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (17908) debug: LED_i: -1[0m
+[0;32mI (18158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (18158) debug: LED_i: -1[0m
+[0;32mI (18408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (18408) debug: LED_i: -1[0m
+[0;32mI (18658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (18658) debug: LED_i: -1[0m
+[0;32mI (18908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (18908) debug: LED_i: -1[0m
+[0;32mI (19158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (19158) debug: LED_i: -1[0m
+[0;32mI (19408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (19408) debug: LED_i: -1[0m
+[0;32mI (19658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (19658) debug: LED_i: -1[0m
+[0;32mI (19908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (19908) debug: LED_i: -1[0m
+[0;32mI (20158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (20158) debug: LED_i: -1[0m
+[0;32mI (20408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (20408) debug: LED_i: -1[0m
+[0;32mI (20658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (20658) debug: LED_i: -1[0m
+[0;32mI (20908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (20908) debug: LED_i: -1[0m
+[0;32mI (21158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (21158) debug: LED_i: -1[0m
+[0;32mI (21408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (21408) debug: LED_i: -1[0m
+[0;32mI (21658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (21658) debug: LED_i: -1[0m
+[0;32mI (21908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (21908) debug: LED_i: -1[0m
+[0;32mI (22158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (22158) debug: LED_i: -1[0m
+[0;32mI (22408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (22408) debug: LED_i: -1[0m
+[0;32mI (22658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (22658) debug: LED_i: -1[0m
+[0;32mI (22908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 0[0m
+[0;32mI (22908) debug: LED_i: 3[0m
+[0;32mI (22908) debug: [0m
+[0;32mI (23408) debug: LED OFF[0m
+[0;32mI (23658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (23658) debug: LED_i: -1[0m
+[0;32mI (23908) debug: BUTTON0: 1, BUTTON1: 0, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (23908) debug: LED_i: 1[0m
+[0;32mI (23908) debug: [0m
+[0;32mI (24408) debug: LED OFF[0m
+[0;32mI (24658) debug: BUTTON0: 0, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (24658) debug: LED_i: 0[0m
+[0;32mI (24658) debug: [0m
+[0;32mI (25158) debug: LED OFF[0m
+[0;32mI (25408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (25408) debug: LED_i: -1[0m
+[0;32mI (25658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 0[0m
+[0;32mI (25658) debug: LED_i: 3[0m
+[0;32mI (25658) debug: [0m
+[0;32mI (26158) debug: LED OFF[0m
+[0;32mI (26408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 0, BUTTON3: 1[0m
+[0;32mI (26408) debug: LED_i: 2[0m
+[0;32mI (26408) debug: [0m
+[0;32mI (26908) debug: LED OFF[0m
+[0;32mI (27158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (27158) debug: LED_i: -1[0m
+[0;32mI (27408) debug: BUTTON0: 0, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (27408) debug: LED_i: 0[0m
+[0;32mI (27408) debug: [0m
+[0;32mI (27908) debug: LED OFF[0m
+[0;32mI (28158) debug: BUTTON0: 1, BUTTON1: 0, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (28158) debug: LED_i: 1[0m
+[0;32mI (28158) debug: [0m
+[0;32mI (28658) debug: LED OFF[0m
+[0;32mI (28908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 0, BUTTON3: 1[0m
+[0;32mI (28908) debug: LED_i: 2[0m
+[0;32mI (28908) debug: [0m
+[0;32mI (29408) debug: LED OFF[0m
+[0;32mI (29658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 0[0m
+[0;32mI (29658) debug: LED_i: 3[0m
+[0;32mI (29658) debug: [0m
+[0;32mI (30158) debug: LED OFF[0m
+[0;32mI (30408) debug: BUTTON0: 1, BUTTON1: 0, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (30408) debug: LED_i: 1[0m
+[0;32mI (30408) debug: [0m
+[0;32mI (30908) debug: LED OFF[0m
+[0;32mI (31158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 0, BUTTON3: 1[0m
+[0;32mI (31158) debug: LED_i: 2[0m
+[0;32mI (31158) debug: [0m
+[0;32mI (31658) debug: LED OFF[0m
+[0;32mI (31908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (31908) debug: LED_i: -1[0m
+[0;32mI (32158) debug: BUTTON0: 1, BUTTON1: 0, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (32158) debug: LED_i: 1[0m
+[0;32mI (32158) debug: [0m
+[0;32mI (32658) debug: LED OFF[0m
+[0;32mI (32908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (32908) debug: LED_i: -1[0m
+[0;32mI (33158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (33158) debug: LED_i: -1[0m
+[0;32mI (33408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (33408) debug: LED_i: -1[0m
+[0;32mI (33658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (33658) debug: LED_i: -1[0m
+[0;32mI (33908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (33908) debug: LED_i: -1[0m
+[0;32mI (34158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (34158) debug: LED_i: -1[0m
+[0;32mI (34408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (34408) debug: LED_i: -1[0m
+[0;32mI (34658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (34658) debug: LED_i: -1[0m
+[0;32mI (34908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (34908) debug: LED_i: -1[0m
+[0;32mI (35158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (35158) debug: LED_i: -1[0m
+[0;32mI (35408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (35408) debug: LED_i: -1[0m
+[0;32mI (35658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (35658) debug: LED_i: -1[0m
+[0;32mI (35908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (35908) debug: LED_i: -1[0m
+[0;32mI (36158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (36158) debug: LED_i: -1[0m
+[0;32mI (36408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (36408) debug: LED_i: -1[0m
+[0;32mI (36658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (36658) debug: LED_i: -1[0m
+[0;32mI (36908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (36908) debug: LED_i: -1[0m
+[0;32mI (37158) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (37158) debug: LED_i: -1[0m
+[0;32mI (37408) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (37408) debug: LED_i: -1[0m
+[0;32mI (37658) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (37658) debug: LED_i: -1[0m
+[0;32mI (37908) debug: BUTTON0: 1, BUTTON1: 1, BUTTON2: 1, BUTTON3: 1[0m
+[0;32mI (37908) debug: LED_i: -1[0m
