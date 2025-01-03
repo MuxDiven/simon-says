@@ -24,6 +24,8 @@ int sequence_length;
 
 // define (button,led) pair, pin selection may be lazy
 
+#define ONBOARD_LED 2
+
 #define LED0 21
 #define LED1 33
 #define LED2 13
@@ -40,7 +42,6 @@ int sequence_length;
 #define TIMER_DIV 80 // 80Mhz clock divided by 80 = 1Mhz (1 tick = 1us)
 #define ALARM_SECONDS 2
 #define TIMER_ALARM_TRIGGER ALARM_SECONDS * 1000000 // 2 seconds (us->s)
-//
 
 // config structs -> used in config() function
 
@@ -124,6 +125,7 @@ static void output_sequence() {
 // NOTE:I don't think anyone will reach this but there will be no NULL POINTER
 // EXCEPTIONS in this house!!!
 static void win_condition() {
+  gpio_set_level(ONBOARD_LED, true);
   ESP_LOGI("?????",
            "how long did this take you?\t***you win I guess!***\tFINAL "
            "SCORE:\t%d",
@@ -141,6 +143,10 @@ static void config(void) {
   gpio_config(&LED_conf);
   gpio_config(&BUTTON_conf);
   sequence_length = STARTING_SEQUENCE;
+
+  gpio_reset_pin(ONBOARD_LED);
+  gpio_set_direction(ONBOARD_LED, GPIO_MODE_OUTPUT);
+  gpio_set_level(ONBOARD_LED, true);
 
   for (int i = 0; i < COMPONENT_PAIRS; i++) {
     gpio_reset_pin(LED_VECTOR[i]);
@@ -207,7 +213,7 @@ game:
 
 fail_cond:
   while (1) { // NOTE:->limbo
-    gpio_set_level(5, true);
+    gpio_set_level(ONBOARD_LED, false);
     ESP_LOGI("FINAL SCORE", "%d", score);
     ESP_LOGI(FAIL, "press the EN button on the micro controller to restart");
     vTaskDelay((ONE_SECOND_DELAY * 60) / portTICK_PERIOD_MS);
