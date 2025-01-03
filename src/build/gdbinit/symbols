@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /Users/mux/Code/esp/simon-says/src/build/blink.elf
+file /Users/mux/Code/esp/simon-says/src/build/simon-says.elf

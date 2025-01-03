@@ -1,0 +1,1127 @@
+4) load
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	0[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	0[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	0[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	0[0m
+[0;32mI (4860) debug: successful input[0m
+[0;32mI (4860) debug: LED ON[0m
+[0;32mI (5360) debug: LED OFF[0m
+[0;32mI (5980) debug: successful input[0m
+[0;32mI (5980) debug: LED ON[0m
+[0;32mI (6480) debug: LED OFF[0m
+[0;32mI (7150) debug: successful input[0m
+[0;32mI (7150) debug: LED ON[0m
+[0;32mI (7650) debug: LED OFF[0m
+[0;32mI (8340) debug: successful input[0m
+[0;32mI (8340) debug: LED ON[0m
+[0;32mI (8840) debug: LED OFF[0m
+[0;32mI (8840) debug: LED ON[0m
+[0;32mI (9340) debug: LED OFF[0m
+[0;32mI (9590) debug: index:	0[0m
+[0;32mI (9590) debug: LED ON[0m
+[0;32mI (10090) debug: LED OFF[0m
+[0;32mI (10340) debug: index:	0[0m
+[0;32mI (10340) debug: LED ON[0m
+[0;32mI (10840) debug: LED OFF[0m
+[0;32mI (11090) debug: index:	0[0m
+[0;32mI (11090) debug: LED ON[0m
+[0;32mI (11590) debug: LED OFF[0m
+[0;32mI (11840) debug: index:	0[0m
+[0;32mI (11840) debug: LED ON[0m
+[0;32mI (12340) debug: LED OFF[0m
+[0;32mI (12590) debug: index:	0[0m
+[0;32mI (13880) debug: successful input[0m
+[0;32mI (13880) debug: LED ON[0m
+[0;32mI (14380) debug: LED OFF[0m
+[0;32mI (15140) debug: successful input[0m
+[0;32mI (15140) debug: LED ON[0m
+[0;32mI (15640) debug: LED OFF[0m
+[0;32mI (16450) debug: successful input[0m
+[0;32mI (16450) debug: LED ON[0m
+[0;32mI (16950) debug: LED OFF[0m
+[0;32mI (17790) debug: successful input[0m
+[0;32mI (17790) debug: LED ON[0m
+[0;32mI (18290) debug: LED OFF[0m
+[0;32mI (19070) debug: successful input[0m
+[0;32mI (19070) debug: LED ON[0m
+[0;32mI (19570) debug: LED OFF[0m
+[0;32mI (19570) debug: LED ON[0m
+[0;32mI (20070) debug: LED OFF[0m
+[0;32mI (20320) debug: index:	0[0m
+[0;32mI (20320) debug: LED ON[0m
+[0;32mI (20820) debug: LED OFF[0m
+[0;32mI (21070) debug: index:	0[0m
+[0;32mI (21070) debug: LED ON[0m
+[0;32mI (21570) debug: LED OFF[0m
+[0;32mI (21820) debug: index:	0[0m
+[0;32mI (21820) debug: LED ON[0m
+[0;32mI (22320) debug: LED OFF[0m
+[0;32mI (22570) debug: index:	0[0m
+[0;32mI (22570) debug: LED ON[0m
+[0;32mI (23070) debug: LED OFF[0m
+[0;32mI (23320) debug: index:	0[0m
+[0;32mI (23320) debug: LED ON[0m
+[0;32mI (23820) debug: LED OFF[0m
+[0;32mI (24070) debug: index:	2[0m
+[0;32mI (26560) debug: successful input[0m
+[0;32mI (26560) debug: LED ON[0m
+[0;32mI (27060) debug: LED OFF[0m
+[0;32mI (27850) debug: successful input[0m
+[0;32mI (27850) debug: LED ON[0m
+[0;32mI (28350) debug: LED OFF[0m
+[0;32mI (29130) debug: successful input[0m
+[0;32mI (29130) debug: LED ON[0m
+[0;32mI (29630) debug: LED OFF[0m
+[0;32mI (30470) debug: successful input[0m
+[0;32mI (30470) debug: LED ON[0m
+[0;32mI (30970) debug: LED OFF[0m
+[0;32mI (31780) debug: successful input[0m
+[0;32mI (31780) debug: LED ON[0m
+[0;32mI (32280) debug: LED OFF[0m
+[0;32mI (33030) debug: successful input[0m
+[0;32mI (33030) debug: LED ON[0m
+[0;32mI (33530) debug: LED OFF[0m
+[0;32mI (33530) debug: LED ON[0m
+[0;32mI (34030) debug: LED OFF[0m
+[0;32mI (34280) debug: index:	0[0m
+[0;32mI (34280) debug: LED ON[0m
+[0;32mI (34780) debug: LED OFF[0m
+[0;32mI (35030) debug: index:	0[0m
+[0;32mI (35030) debug: LED ON[0m
+[0;32mI (35530) debug: LED OFF[0m
+[0;32mI (35780) debug: index:	0[0m
+[0;32mI (35780) debug: LED ON[0m
+[0;32mI (36280) debug: LED OFF[0m
+[0;32mI (36530) debug: index:	0[0m
+[0;32mI (36530) debug: LED ON[0m
+[0;32mI (37030) debug: LED OFF[0m
+[0;32mI (37280) debug: index:	0[0m
+[0;32mI (37280) debug: LED ON[0m
+[0;32mI (37780) debug: LED OFF[0m
+[0;32mI (38030) debug: index:	2[0m
+[0;32mI (38030) debug: LED ON[0m
+[0;32mI (38530) debug: LED OFF[0m
+[0;32mI (38780) debug: index:	0[0m
+[0;32mI (40670) debug: successful input[0m
+[0;32mI (40670) debug: LED ON[0m
+[0;32mI (41170) debug: LED OFF[0m
+[0;32mI (41890) debug: successful input[0m
+[0;32mI (41890) debug: LED ON[0m
+[0;32mI (42390) debug: LED OFF[0m
+[0;32mI (43090) debug: successful input[0m
+[0;32mI (43090) debug: LED ON[0m
+[0;32mI (43590) debug: LED OFF[0m
+[0;32mI (44290) debug: successful input[0m
+[0;32mI (44290) debug: LED ON[0m
+[0;32mI (44790) debug: LED OFF[0m
+[0;32mI (45520) debug: successful input[0m
+[0;32mI (45520) debug: LED ON[0m
+[0;32mI (46020) debug: LED OFF[0m
+[0;32mI (46630) GAMEOVER: incorrect input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	3[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	3[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	3[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	3[0m
+[0;32mI (5550) debug: successful input[0m
+[0;32mI (5550) debug: LED ON[0m
+[0;32mI (6050) debug: LED OFF[0m
+[0;32mI (6650) debug: successful input[0m
+[0;32mI (6650) debug: LED ON[0m
+[0;32mI (7150) debug: LED OFF[0m
+[0;32mI (7770) debug: successful input[0m
+[0;32mI (7770) debug: LED ON[0m
+[0;32mI (8270) debug: LED OFF[0m
+[0;32mI (8930) debug: successful input[0m
+[0;32mI (8930) debug: LED ON[0m
+[0;32mI (9430) debug: LED OFF[0m
+[0;32mI (9430) debug: LED ON[0m
+[0;32mI (9930) debug: LED OFF[0m
+[0;32mI (10180) debug: index:	3[0m
+[0;32mI (10180) debug: LED ON[0m
+[0;32mI (10680) debug: LED OFF[0m
+[0;32mI (10930) debug: index:	3[0m
+[0;32mI (10930) debug: LED ON[0m
+[0;32mI (11430) debug: LED OFF[0m
+[0;32mI (11680) debug: index:	3[0m
+[0;32mI (11680) debug: LED ON[0m
+[0;32mI (12180) debug: LED OFF[0m
+[0;32mI (12430) debug: index:	3[0m
+[0;32mI (12430) debug: LED ON[0m
+[0;32mI (12930) debug: LED OFF[0m
+[0;32mI (13180) debug: index:	0[0m
+[0;32mI (15180) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	0[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	0[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	0[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	0[0m
+[0;32mI (5420) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	3[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	3[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	3[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	3[0m
+[0;32mI (5420) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	1[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	1[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	1[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	2[0m
+[0;32mI (5630) debug: successful input[0m
+[0;32mI (5630) debug: LED ON[0m
+[0;32mI (6130) debug: LED OFF[0m
+[0;32mI (6710) debug: successful input[0m
+[0;32mI (6710) debug: LED ON[0m
+[0;32mI (7210) debug: LED OFF[0m
+[0;32mI (7910) debug: successful input[0m
+[0;32mI (7910) debug: LED ON[0m
+[0;32mI (8410) debug: LED OFF[0m
+[0;32mI (9020) GAMEOVER: incorrect input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	2[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	2[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	2[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	2[0m
+[0;32mI (5420) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (220) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	1[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	1[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	1[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	1[0m
+[0;32mI (5420) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	3[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	3[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	3[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	3[0m
+[0;32mI (5420) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	3[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	3[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	3[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
+[0;32mI (3420) debug: index:	3[0m
+[0;32mI (5420) GAMEOVER: Time out, took to long to input[0m
+
+assert failed: heap_caps_free heap_caps_base.c:69 (heap != NULL && "free() target pointer is outside heap areas")
+
+
+Backtrace: 0x40081925:0x3ffb43c0 0x400852fd:0x3ffb43e0 0x4008b1fd:0x3ffb4400 0x400820bd:0x3ffb4520 0x4008b219:0x3ffb4540 0x400d3cce:0x3ffb4560 0x400e1394:0x3ffb4590 0x40085af1:0x3ffb45c0
+
+
+
+
+ELF file SHA256: 3c7eabdaf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6284
+ho 0 tail 12 room 4
+load:0x40078000,len:15780
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-dev-847-gcb3ac7429c-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 30 2024 20:36:16[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=080f8h ( 33016) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00018120 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00018144 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (124) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=11a8ch ( 72332) map[0m
+[0;32mI (149) esp_image: segment 5: paddr=00031ab4 vaddr=40085ca0 size=06c60h ( 27744) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     blink[0m
+[0;32mI (189) app_init: App version:      586d667-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jan  2 2025 19:25:26[0m
+[0;32mI (198) app_init: ELF file SHA256:  3c7eabdaf...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5-dev-847-gcb3ac7429c-dirty[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (216) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB32A0 len 0002CD60 (179 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008C900 len 00013700 (77 KiB): IRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;32mI (280) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) debug: CONSTRUCTOR[0m
+[0;32mI (290) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (290) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (300) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (310) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (400) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) debug: LED ON[0m
+[0;32mI (920) debug: LED OFF[0m
+[0;32mI (1170) debug: index:	1[0m
+[0;32mI (1170) debug: LED ON[0m
+[0;32mI (1670) debug: LED OFF[0m
+[0;32mI (1920) debug: index:	1[0m
+[0;32mI (1920) debug: LED ON[0m
+[0;32mI (2420) debug: LED OFF[0m
+[0;32mI (2670) debug: index:	1[0m
+[0;32mI (2670) debug: LED ON[0m
+[0;32mI (3170) debug: LED OFF[0m
