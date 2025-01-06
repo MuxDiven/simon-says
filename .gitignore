@@ -1,11 +1,11 @@
 # Ignore temporary cache files
-src/.cache/
+.cache/
 
 # Ignore build artifacts
-src/build/
+build/
 
 # Ignore dependency lock files (optional)
-src/dependencies.lock
+dependencies.lock
 
 # Ignore SDK configuration files (if generated)
 src/sdkconfig
