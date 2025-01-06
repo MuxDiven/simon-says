@@ -1,0 +1,12 @@
+# Ignore temporary cache files
+.cache/
+
+# Ignore build artifacts
+build/
+
+# Ignore dependency lock files (optional)
+dependencies.lock
+
+# Ignore SDK configuration files (if generated)
+sdkconfig
+sdkconfig.defaults.*

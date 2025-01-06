@@ -24,7 +24,8 @@ int sequence_length;
 
 // define (button,led) pair, pin selection may be lazy
 
-#define ONBOARD_LED 2
+#define ONBOARD_LED                                                            \
+  2 // acts as a signifier to inform the user that the game is off
 
 #define LED0 21
 #define LED1 33
@@ -87,18 +88,20 @@ static void blink_led(int index) {
 
 static int input_listener() {
   /*-------------------------DEBUG INSTRUCTIONS-----------------------*/
-  // NOTE:code:
+  // NOTE:debug print:
   // ESP_LOGI(TAG, "BUTTON0: %d, BUTTON1: %d, BUTTON2: %d, BUTTON3: %d",
   //          gpio_get_level(BUTTON0), gpio_get_level(BUTTON1),
   //          gpio_get_level(BUTTON2), gpio_get_level(BUTTON3));
 
-  // 0 is active for pull low
-  // 1 is active for pull high
-  // depends if resistor is ground or not
-  // use the debug print above, labeled code
+  // if BUTTONS are not transmitting input:
+  //  0 is active for pull low
+  //  1 is active for pull high
+  //  depends if resistor is ground(low) or not(high)
+  //  use the debug print above, labeled code
 
   // currently grounding with resistors
   // LED INDEX: -1 for NULL input since NULL => "#define NULL 0"
+  //
   /*-----------------------------------------------------------------*/
   int8_t LED_i = -1;
 
@@ -163,12 +166,6 @@ game:
   config();
 
   while (1) {
-    // dynamic memory has issues with interrupts caused by timer, guess this is
-    // the win condition
-    if (sequence_length == BUFFER) {
-      win_condition();
-      goto game;
-    }
     output_sequence();
 
     for (int i = 0; i < sequence_length; i++) { // check against all nums
@@ -203,6 +200,13 @@ game:
           }
         }
       }
+    }
+
+    // dynamic memory has issues with interrupts caused by timer, guess this is
+    // the win condition
+    if (sequence_length == BUFFER - 1) {
+      win_condition();
+      goto game;
     }
 
     sequence_length++;
