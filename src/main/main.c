@@ -12,10 +12,8 @@ static const char *TAG = "debug";
 static const char *FAIL = "GAMEOVER";
 #define BUFFER 512
 #define ONE_SECOND_DELAY 1000
-
 // game logic variables
 int index_vector[BUFFER];
-int vector_buffer;
 int sequence_length;
 #define COMPONENT_PAIRS                                                        \
   4 // NOTE:-> you would have to change code if you change this, this macro will
@@ -191,7 +189,6 @@ game:
 
           if (input_value == index_vector[i]) { // good input
             vTaskDelay((ONE_SECOND_DELAY >> 2) / portTICK_PERIOD_MS);
-            ESP_LOGI(TAG, "successful input");
             blink_led(input_value);
             timer_pause(TIMER_GROUP, TIMER_IDX);
           } else {
